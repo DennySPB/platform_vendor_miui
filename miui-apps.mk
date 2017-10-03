@@ -21,7 +21,16 @@ PRODUCT_COPY_FILES += \
     vendor/miui/priv-app/MiuiCamera/etc/face_ravishing_238_224:system/etc/face_ravishing_238_224 \
     vendor/miui/priv-app/MiuiCamera/etc/face_splendid_274_200:system/etc/face_splendid_274_200 \
     vendor/miui/priv-app/MiuiCamera/etc/lf_facerank_model.bin:system/etc/lf_facerank_model.bin \
-    vendor/miui/priv-app/MiuiCamera/etc/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat
+    vendor/miui/priv-app/MiuiCamera/etc/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat \
+    vendor/miui/priv-app/MiuiCamera/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
+    vendor/miui/priv-app/MiuiCamera/etc/crown_156_128.bin:system/etc/crown_156_128.bin \
+    vendor/miui/priv-app/MiuiCamera/etc/female_bg.png:system/etc/female_bg.png \
+    vendor/miui/priv-app/MiuiCamera/etc/female_icon.png:system/etc/female_icon.png \
+    vendor/miui/priv-app/MiuiCamera/etc/male_bg.png:system/etc/male_bg.png \
+    vendor/miui/priv-app/MiuiCamera/etc/male_icon.png:system/etc/male_icon.png \
+    vendor/miui/priv-app/MiuiCamera/etc/people_gender.dat:system/etc/people_gender.dat \
+    vendor/miui/priv-app/MiuiCamera/etc/score_bg.png:system/etc/score_bg.png \
+    vendor/miui/priv-app/MiuiCamera/etc/score_icon.png:system/etc/score_icon.png
 
 PRODUCT_PACKAGES += \
     MiCalc \
