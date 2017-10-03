@@ -20,12 +20,32 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := MiuiCamera/MiuiCamera.apk
 LOCAL_REQUIRED_MODULES := libCameraEffectJNI64 libCameraEffectJNI libminui64 libminui32 libmorpho_group_portrait64 libmorpho_group_portrait libmorpho_groupshot \
 			  libmorpho_groupshot64 libmorpho_panorama_gp libmorpho_panorama_gp64 libMiCameraHal libts_detected_face_hal libts_face_beautify_hal \
-			  org.codeaurora.camera.jar
+			  libmorpho_panorama libmorpho_memory_allocator org.codeaurora.camera.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmorpho_memory_allocator
+LOCAL_SRC_FILES := MiuiCamera/lib/arm64/libmorpho_memory_allocator.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_PRELINK_MODULE := false
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/MiuiCamera/lib/arm64
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmorpho_panorama
+LOCAL_SRC_FILES := MiuiCamera/lib/arm64/libmorpho_panorama.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_PRELINK_MODULE := false
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/MiuiCamera/lib/arm64
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
