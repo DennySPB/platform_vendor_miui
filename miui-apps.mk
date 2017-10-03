@@ -30,7 +30,8 @@ PRODUCT_COPY_FILES += \
     vendor/miui/priv-app/MiuiCamera/etc/male_icon.png:system/etc/male_icon.png \
     vendor/miui/priv-app/MiuiCamera/etc/people_gender.dat:system/etc/people_gender.dat \
     vendor/miui/priv-app/MiuiCamera/etc/score_bg.png:system/etc/score_bg.png \
-    vendor/miui/priv-app/MiuiCamera/etc/score_icon.png:system/etc/score_icon.png
+    vendor/miui/priv-app/MiuiCamera/etc/score_icon.png:system/etc/score_icon.png \
+    vendor/miui/priv-app/MiuiCamera/etc/gemini.xml:system/etc/device_features/gemini.xml
 
 PRODUCT_PACKAGES += \
     MiCalc \
