@@ -48,7 +48,7 @@
     <!--whether support time watermark in camera-->
     <bool name="support_camera_water_mark">true</bool>
     <!--whether support boosting screen brightness in camera-->
-    <bool name="support_camera_boost_brightness">true</bool>
+    <bool name="support_camera_boost_brightness">false</bool>
     <!--whether add watermark in camera app-->
     <bool name="is_camera_app_water_mark">false</bool>
     <!--whether support face info watermark in camera-->
