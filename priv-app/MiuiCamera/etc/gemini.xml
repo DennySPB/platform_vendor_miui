@@ -4,7 +4,7 @@
     <bool name="is_xiaomi">true</bool>
     <!--whether the device is no xiaomi-->
     <bool name="is_older_device">false</bool>
-    <!--whether the device is no xiaomi-->
+    <!--whether the device is pad xiaomi-->
     <bool name="is_pad">false</bool>
     <!--whether the device has dual sd card-->
     <bool name="support_dual_sd_card">false</bool>
@@ -35,6 +35,8 @@
 
     <!--whether support aohdr in camera-->
     <bool name="support_camera_aohdr">true</bool>
+    <!--1=flash 2=hdr 4=motion 8=night 15=full-->
+    <integer name="camera_supported_asd">15</integer>
     <!--whether support object tracking in camera-->
     <bool name="support_object_track">true</bool>
     <!--whether support burst shoot in camera-->
@@ -129,8 +131,6 @@
     <integer name="burst_shoot_count">100</integer>
     <!--Successful flag of camera continuous auto focus  result-->
     <integer name="camera_focus_success_flag">1</integer>
-    <!--b0:flash b1:hdr b2:motion b3:night-->
-    <integer name="camera_supported_asd">11</integer>
     <!--total steps number of camera compensation-->
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
